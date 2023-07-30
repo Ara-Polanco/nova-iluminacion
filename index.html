@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Iluminación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="container container__header">
+
+            <div class="header__img">
+                <picture>
+                    <!-- <source
+                     sizes="1920w" 
+                     srcset="img/imagen.avif 1920w", 
+                     type="image/avif"> -->
+                    <source
+                     sizes="1920w" 
+                     srcset="assets/images/header.webp 1920w" 
+                     type="image/webp">
+                    <source
+                     sizes="1920w" 
+                     srcset="assets/images/header.jpg 1920w"  
+                     type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="assets/images/header.jpg" lazyalt="imagen" width="1000" height="400" alt="Lamparas">
+                </picture>
+            </div>
+
+            <div class="header__text">
+                
+                <h1 class="header__product-name degraded"><span>Eglo</span> Colgante Carlton</h1>
+                <p class="header__product-tagline">Lámparas Vintage</p>
+                <p class="header__product-description">Luminario colgante apto para brindar elegancia en donde se instale. Brinda una iluminación que se adapta a cualquier espacio. Ilumina y brinda un elemento decorativo por su diseño.</p>
+                <p class="header__product-price">$1,899.<sup>00</sup></p>
+            </div>
+
+        </div>
+    </header>
+
+    
     
 </body>
 </html>

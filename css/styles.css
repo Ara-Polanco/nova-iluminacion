@@ -1,0 +1,84 @@
+:root {
+    --colorPrimario: blue;
+    --colorSecundario: green;
+    --colorGris: #3B3B3B;
+    --colorBlanco: #FFFFFF;
+    --colorNegro: #1F1E1E;
+    --colorGrisClaro: #E1E1E1;
+
+    --separacion: 3rem;
+
+
+    --fuentePrincipal : 'Cormorant Garamond', sans-serif;
+    --fuenteSecundaria : 'Roboto', serif;
+    /* Cambiar fuente Secundaria */
+
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*Convierte 1rem a 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+/* Globales */
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    font-family: var(--fuentePrincipal);
+  /*   margin: var(--separacion) 0; * *// 
+    /* margin: 3rem  0  (arriba/abajo   izquierda/derecha*/
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%; /* No crecerá mas de su tamaño natural */
+    display: block; /* Elimina el margen inferior de la imagen */
+    height: auto;
+   /*  margin-bottom: calc(var(--separacion) /2);  borrar*/
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+/* Degradados */
+.degraded {
+    background: linear-gradient(to right, var(--colorPrimario) 0%, var(--colorSecundario) 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+
