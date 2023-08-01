@@ -170,5 +170,57 @@ img {
     }
 }
 
+/* about-Eglo */
+.about-Eglo {
+    background-image: linear-gradient( to bottom, transparent 50%, var(--colorPrimario) 0%), url(/assets/images/colgantes-eglo.jpg);
+    background-position:  center bottom;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 100rem;
+    padding: var(--separacion);
+}
+
+.about-Eglo--grid {
+    display: grid;
+    grid-template-rows: repeat(2, 25rem);
+    row-gap: var(--separacion); 
+}
+
+.text-about--Eglo {
+    grid-row: 2/3;
+    color: var(--colorBlanco);
+    max-width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 992px) {  
+    .about-Eglo {
+        background-image: linear-gradient( to left, transparent 50%, var(--colorPrimario) 0%), url(/assets/images/colgantes-eglo.jpg);
+        background-position: right center;
+        background-size: 100%, 68rem;
+    
+    }
+
+    .about-Eglo--grid {
+        grid-template-rows: unset;
+        row-gap: unset;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--separacion);
+    }
+
+    .text-about--Eglo {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+}
+
+
 
 
