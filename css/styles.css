@@ -36,8 +36,7 @@ h2,
 h3 {
     font-weight: 900;
     font-family: var(--fuentePrincipal);
-  /*   margin: var(--separacion) 0; * *// 
-    /* margin: 3rem  0  (arriba/abajo   izquierda/derecha*/
+  /*   margin: var(--separacion) 0; * */ 
 }
 
 h1 {
@@ -45,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 
 h3 {
@@ -56,7 +55,6 @@ img {
     max-width: 100%; /* No crecerá mas de su tamaño natural */
     display: block; /* Elimina el margen inferior de la imagen */
     height: auto;
-   /*  margin-bottom: calc(var(--separacion) /2);  borrar*/
 }
 
 /* Utilidades */
@@ -133,7 +131,6 @@ img {
 
 .icon {
     text-align: center;
-    /* padding: var(--separacion); */
     padding-bottom: var(--separacion);
 
 }
@@ -172,10 +169,10 @@ img {
 
 /* about-Eglo */
 .about-Eglo {
-    background-image: linear-gradient( to bottom, transparent 50%, var(--colorPrimario) 0%), url(/assets/images/colgantes-eglo.jpg);
-    background-position:  center bottom;
+    background-image: linear-gradient( to bottom, transparent 50%, var(--colorPrimario) 0%), url(/assets/images/model-d.jpg);
+    background-position: bottom left;
     background-repeat: repeat, no-repeat;
-    background-size: 100%, 100rem;
+    background-size: 100%, auto;
     padding: var(--separacion);
 }
 
@@ -195,14 +192,13 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 @media (min-width: 992px) {  
     .about-Eglo {
-        background-image: linear-gradient( to left, transparent 50%, var(--colorPrimario) 0%), url(/assets/images/colgantes-eglo.jpg);
-        background-position: right center;
-        background-size: 100%, 68rem;
+        background-image: linear-gradient( to left, transparent 50%, var(--colorPrimario) 0%), url(/assets/images/model-d.jpg);
+        background-position: center right;
+        background-size: 100%, 72rem;
     
     }
 
@@ -220,7 +216,6 @@ img {
     }
 
 }
-
 
 
 
