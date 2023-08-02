@@ -1,10 +1,10 @@
 :root {
-    --colorPrimario: blue;
-    --colorSecundario: green;
-    --colorGris: #3B3B3B;
-    --colorBlanco: #FFFFFF;
-    --colorNegro: #1F1E1E;
-    --colorGrisClaro: #E1E1E1;
+    --colorPrimario: #052127;
+    --colorSecundario: #378072;
+    --colorGris: #b5b083;
+    --colorBlanco: #efefdc;
+    --colorNegro: #000300;
+    --colorGrisClaro: #c0d2b4;
 
     --separacion: 3rem;
 
@@ -35,8 +35,7 @@ h1,
 h2,
 h3 {
     font-weight: 900;
-    font-family: var(--fuentePrincipal);
-  /*   margin: var(--separacion) 0; * */ 
+    font-family: var(--fuentePrincipal); 
 }
 
 h1 {
@@ -305,23 +304,54 @@ img {
     background-image: linear-gradient(to bottom, transparent 50%, var(--colorBlanco) 0% ), url(/assets/images/newsletter-movil.jpg);
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 100%, 75rem;
+    background-size: 100%, 100rem;
 }
 
 .newsletter-contain {
     display: grid;
-    grid-template-rows: repeat(2, 25rem);
+    grid-template-rows: repeat(2, 38rem);
+}
+
+@media (min-width: 350px) {  
+    .newsletter {
+        background-size: 100%, 90rem;
+    }
+
+    .newsletter-contain {
+        grid-template-rows: repeat(2, 34rem);
+    }
+}
+
+@media (min-width: 440px) {  
+    .newsletter {
+        background-size: 100%, 90rem;
+    }
+
+    .newsletter-contain {
+        grid-template-rows: repeat(2, 28rem);
+    }
+}
+
+@media (min-width: 576px) {  
+    .newsletter {
+        background-size: 100%, 90rem;
+    }
+
+    .newsletter-contain {
+        grid-template-rows: repeat(2, 26rem);
+    }
 }
 
 .newsletter-text {
     grid-row: 2/3;
+    padding: 1rem;
 }
 
  @media (min-width: 768px) { 
     .newsletter {
         background-image: linear-gradient(to right, transparent 65%, var(--colorBlanco) 0% ), url(/assets/images/newsletter.jpg);
-        background-size: 97%, 85%;
-        background-position: center left;
+        background-size: 97%, 70rem;
+        background-position: center, -6rem -15rem;
     }
 
     .newsletter-contain{ 
@@ -340,6 +370,11 @@ img {
         background-position: left, -5rem -13rem;
         padding: 8rem 0;
     }
+    .newsletter {
+        background-image: linear-gradient(to right, transparent 65%, var(--colorBlanco) 0% ), url(/assets/images/newsletter.jpg);
+        background-size: 97%, 85rem;
+        background-position: center left;
+    }
  }
 
 .input input:first-child {
@@ -354,6 +389,13 @@ img {
     padding: 1.5rem;
     color: var(--colorBlanco);
     border: none;
+}
+
+/* Footer */
+.footer p {
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.8rem;
+    margin: 2rem;
 }
 
 
